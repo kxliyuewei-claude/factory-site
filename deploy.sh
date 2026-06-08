@@ -12,7 +12,7 @@ if [[ ! -d .git ]]; then
 fi
 
 git add index.html privacy support deploy.sh deploy-github-pages.md deploy-cloudflare-pages.md 2>/dev/null || git add .
-git commit -m "Deploy BatchRename Pocket support pages" || true
+git commit -m "Deploy app support pages" || true
 
 if ! gh repo view "$REPO" >/dev/null 2>&1; then
   gh repo create "$REPO" --public --source=. --remote=origin --push
@@ -26,5 +26,5 @@ fi
 gh api -X POST "repos/$REPO/pages" -f source.branch="$BRANCH" -f source.path="/" >/dev/null 2>&1 || true
 gh api -X PUT "repos/$REPO/pages" -f source.branch="$BRANCH" -f source.path="/" >/dev/null 2>&1 || true
 
-echo "https://kxliyuewei-claude.github.io/factory-site/privacy/batchrename-pocket.html"
-echo "https://kxliyuewei-claude.github.io/factory-site/support/batchrename-pocket.html"
+echo "https://kxliyuewei-claude.github.io/factory-site/privacy/freezer-map.html"
+echo "https://kxliyuewei-claude.github.io/factory-site/support/freezer-map.html"
