@@ -26,5 +26,6 @@ fi
 gh api -X POST "repos/$REPO/pages" -f source.branch="$BRANCH" -f source.path="/" >/dev/null 2>&1 || true
 gh api -X PUT "repos/$REPO/pages" -f source.branch="$BRANCH" -f source.path="/" >/dev/null 2>&1 || true
 
-echo "https://kxliyuewei-claude.github.io/factory-site/privacy/freezer-map.html"
-echo "https://kxliyuewei-claude.github.io/factory-site/support/freezer-map.html"
+echo "Factory site deployed:"
+echo "https://kxliyuewei-claude.github.io/factory-site/privacy/boltplan.html"
+echo "https://kxliyuewei-claude.github.io/factory-site/support/boltplan.html"
