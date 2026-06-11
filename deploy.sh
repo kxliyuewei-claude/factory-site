@@ -27,5 +27,5 @@ gh api -X POST "repos/$REPO/pages" -f source.branch="$BRANCH" -f source.path="/"
 gh api -X PUT "repos/$REPO/pages" -f source.branch="$BRANCH" -f source.path="/" >/dev/null 2>&1 || true
 
 echo "Factory site deployed:"
-echo "https://kxliyuewei-claude.github.io/factory-site/privacy/boltplan.html"
-echo "https://kxliyuewei-claude.github.io/factory-site/support/boltplan.html"
+echo "https://kxliyuewei-claude.github.io/factory-site/privacy/fretmeasure-log.html"
+echo "https://kxliyuewei-claude.github.io/factory-site/support/fretmeasure-log.html"
